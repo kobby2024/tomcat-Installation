@@ -1,0 +1,20 @@
+INSIDE MAVEN
+
+cd jp/
+cd mwa/
+mvn clean package
+ls target
+sudo cp target/tesla.war /opt/tomcat9/webapps/
+
+
+INSIDE TOMCAT
+
+ cd /opt/tomcat/
+ starttomcat
+ curl localhost:8080
+ curl -v ip:8080
+ sudo ls /opt/tomcat/webapps
+ sudo ls /opt/tomcat/webapps/tesla
+ sudo ls /opt/tomcat/webapps/tesla/jsps
+ sudo vi /opt/tomcat/webapps/tesla/jsps/home.jsp
+ stoptomcat
