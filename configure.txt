@@ -1,7 +1,7 @@
 #2. Start of tomcat configuration 
 
 #Tomcat server configuration:
-find / -name server.xml context.xml
+find / -name server.xml
 # vim /opt/tomcat9/conf/server.xml to locate and change connector port 8080 if desired; restart tomcat when port is changed to take effect.
   
 # vim /opt/tomcat9/webapps/manager/META-INF/context.xml and begin commenting line 21 and end of line 22
