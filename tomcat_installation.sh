@@ -3,12 +3,12 @@
 # Steps for Installing tomcat9 on rhel9
 # update server
 sudo yum update -y
-# install Java JDK 1.8+ as a pre-requisit for tomcat to run.
+# sudo yum install fontconfig java-17-openjdk -y.
 sudo hostnamectl set-hostname tomcat
 cd /opt
 # install git wget zip unzip packages
 sudo yum install git wget zip unzip -y
-sudo yum install java-1.8.0-openjdk-devel -y
+sudo yum install fontconfig java-17-openjdk -y
 sudo wget https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.100/bin/apache-tomcat-9.0.100.zip
 sudo unzip apache-tomcat-9.0.100.zip
 sudo rm -rf apache-tomcat-9.0.100.zip
